@@ -28,7 +28,18 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "unsafe-secret-key")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://myportfolio-yt1k.onrender.com']
+ALLOWED_HOSTS = [
+    'myportfolio-yt1k.onrender.com',
+    '.onrender.com',
+    'localhost',
+    '127.0.0.1',
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://myportfolio-yt1k.onrender.com',
+    'https://*.onrender.com',
+]
+
 
 
 # Application definition
