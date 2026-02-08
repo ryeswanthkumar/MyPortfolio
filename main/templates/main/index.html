@@ -1,0 +1,221 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block content %}
+
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-card">
+        <img src="{% static 'media/my_photo.jpg' %}" class="profile-pic">
+        <h1>Hi, I'm <span>Yeswanth Kumar</span></h1>
+        <p>Python Developer | Django | Data Science & ML</p>
+
+        <div class="hero-buttons">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="{% static 'resume/Yeswanth_Kumar_Python_Developer.pdf' %}" class="btn outline">Resume</a>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate Python Developer with expertise in Django and Data Science.
+        I love building web applications, solving real-world problems using Python,
+        and exploring Machine Learning models.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+    <h2>Technical Skills</h2>
+
+    <h3 class="skill-title">Programming & Backend</h3>
+    <div class="skill-grid">
+        <div class="skill-card"><img src="{% static 'media/python.jpeg' %}"><p>Python</p></div>
+        <div class="skill-card"><img src="{% static 'media/django.png' %}"><p>Django</p></div>
+        <div class="skill-card"><img src="{% static 'media/html5.png' %}"><p>HTML</p></div>
+        <div class="skill-card"><img src="{% static 'media/css3.png' %}"><p>CSS</p></div>
+        <div class="skill-card"><img src="{% static 'media/javascript.png' %}"><p>JavaScript</p></div>
+        <div class="skill-card"><img src="{% static 'media/mysql.jpeg' %}"><p>MySQL</p></div>
+    </div>
+
+    <h3 class="skill-title">Data Science & Machine Learning</h3>
+    <div class="skill-grid">
+        <div class="skill-card"><img src="{% static 'media/pandas.png' %}"><p>Pandas</p></div>
+        <div class="skill-card"><img src="{% static 'media/numpy.png' %}"><p>NumPy</p></div>
+        <div class="skill-card"><img src="{% static 'media/scikit.png' %}"><p>Scikit-Learn</p></div>
+        <div class="skill-card"><img src="{% static 'media/matplotlib.png' %}"><p>Matplotlib</p></div>
+        <div class="skill-card"><img src="{% static 'media/excel.png' %}"><p>Excel</p></div>
+    </div>
+</section>
+<!-- PROJECTS -->
+<section class="section" id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-grid">
+
+        <!-- ATS Resume System -->
+        <div class="project-card">
+            <img src="{% static 'media/projects/ats_dashboard.png' %}" class="project-img" alt="ATS System">
+
+            <h3>ATS Resume System</h3>
+            <p>
+                A web-based Applicant Tracking System built using Django to manage
+                candidate resumes, track application status (Shortlisted, On Hold, Rejected),
+                and streamline the recruitment workflow with a clean admin dashboard.
+            </p>
+
+            <div class="project-footer">
+                <a href="https://github.com/ryeswanthkumar/MyPortfolio" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <span class="badge">Live Demo In Progress</span>
+            </div>
+        </div>
+
+        <!-- HR Management System -->
+        <div class="project-card">
+            <img src="{% static 'media/projects/hr_dashboard.png' %}" class="project-img" alt="HR Dashboard">
+
+            <h3>HR Management System</h3>
+            <p>
+                A full-stack HR management application that handles employee records,
+                attendance tracking, payroll management, and role-based dashboards
+                with secure authentication using Django and MySQL.
+            </p>
+
+            <div class="project-footer">
+                <a href="https://github.com/ryeswanthkumar/HrManagement" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <span class="badge">Live Demo In Progress</span>
+            </div>
+        </div>
+
+        <!-- Weather Forecasting -->
+        <div class="project-card">
+            <img src="{% static 'media/projects/weather_forecasting.png' %}" class="project-img" alt="Weather App">
+
+            <h3>Weather Forecasting Application</h3>
+            <p>
+                A responsive weather forecasting web application developed using
+                HTML, CSS, and JavaScript that fetches real-time weather data using
+                public APIs and displays temperature, humidity, and weather conditions.
+            </p>
+
+            <div class="project-footer">
+                <a href="#" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <span class="badge">Completed</span>
+            </div>
+        </div>
+
+        <!-- Netflix Clone -->
+        <div class="project-card">
+            <img src="{% static 'media/projects/Netflix_UI.png' %}" class="project-img" alt="Netflix Clone">
+
+            <h3>Netflix Clone</h3>
+            <p>
+                A frontend clone of Netflix built using HTML and CSS, focusing on
+                responsive design, layout structuring, and UI consistency to replicate
+                the real-world streaming platform interface.
+            </p>
+
+            <div class="project-footer">
+                <a href="#" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <span class="badge">Completed</span>
+            </div>
+        </div>
+
+        <!-- YouTube Data Warehousing -->
+        <div class="project-card">
+            <img src="{% static 'media/projects/youtube_dashboard.png' %}" class="project-img" alt="YouTube Analytics">
+
+            <h3>YouTube Data Warehousing</h3>
+            <p>
+                An end-to-end data engineering project that uses the YouTube API to
+                collect channel data, store it in a structured data warehouse,
+                and perform analytical queries for insights and reporting.
+            </p>
+
+            <div class="project-footer">
+                <a href="https://github.com/ryeswanthkumar/Youtube-Data-Harvesting-and-Warehousing" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <span class="badge">Completed</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section" id="education">
+    <h2>Education</h2>
+
+    <div class="edu-grid">
+        <div class="edu-card">
+            B.E Mechanical Engineering – 2022
+        </div>
+    </div>
+</section>
+
+<!-- INTERNSHIP -->
+<section class="section" id="internship">
+    <h2>Internship</h2>
+
+    <div class="edu-grid">
+        <div class="edu-card">
+            Data Science Intern – GUVI (IIT-M Incubated)<br>
+            <small>Duration: 6 Months</small>
+        </div>
+
+        <div class="edu-card">
+            Python Full Stack Developer Intern – Palle Technologies<br>
+            <small>Duration: 6 Months</small>
+        </div>
+    </div>
+</section>
+
+
+<!-- CERTIFICATES -->
+<section class="section" id="certificates">
+    <h2>Certificates</h2>
+
+    <div class="cert-grid">
+        <div class="cert-card">Python Programming</div>
+        <div class="cert-card">Django Development</div>
+        <div class="cert-card">Data Science</div>
+        <div class="cert-card">Machine Learning</div>
+        <div class="cert-card">SQL</div>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section" id="experience">
+    <h2>Experience</h2>
+
+    <div class="edu-grid">
+        <div class="edu-card">Python Full Stack Intern – Palle Technologies</div>
+        <div class="edu-card">Manufacturing Industry – 2022–2024</div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+    <h2>Contact Me</h2>
+
+    <div class="contact-grid">
+        <p><i class="fa-solid fa-envelope"></i> yeswanthkumar348@email.com</p>
+        <p><i class="fa-brands fa-linkedin"></i> linkedin.com/in/yeswanthkumar16</p>
+        <p><i class="fa-brands fa-github"></i> github.com/ryeswanthkumar</p>
+    </div>
+</section>
+
+{% endblock %}
