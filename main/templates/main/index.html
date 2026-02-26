@@ -3,17 +3,16 @@
 
 {% block content %}
 
-
 <!-- HERO -->
 <section class="hero">
     <div class="hero-card">
         <img src="{% static 'media/my_photo.jpg' %}" class="profile-pic">
         <h1>Hi, I'm <span>Yeswanth Kumar</span></h1>
-        <p>Python Developer | Django | Data Science & ML</p>
+        <p>Full Stack Developer | Angular | TypeScript | Django | MySQL</p>
 
         <div class="hero-buttons">
             <a href="#projects" class="btn">View Projects</a>
-            <a href="{% static 'resume/Yeswanth_Kumar_Python_Developer.pdf' %}" class="btn outline">Resume</a>
+            <a href="{% static 'resume/Yeswanth_Kumar_Full_Stack_Developer.pdf' %}" class="btn outline">Resume</a>
         </div>
     </div>
 </section>
@@ -22,9 +21,10 @@
 <section class="section" id="about">
     <h2>About Me</h2>
     <p>
-        I am a passionate Python Developer with expertise in Django and Data Science.
-        I love building web applications, solving real-world problems using Python,
-        and exploring Machine Learning models.
+        I am a passionate Full Stack Developer skilled in building scalable web 
+        applications using Angular, TypeScript, Django, and MySQL.
+        I enjoy designing responsive user interfaces, developing secure backend APIs,
+        and delivering complete end-to-end web solutions.
     </p>
 </section>
 
@@ -32,25 +32,18 @@
 <section class="section" id="skills">
     <h2>Technical Skills</h2>
 
-    <h3 class="skill-title">Programming & Backend</h3>
+    <h3 class="skill-title">Frontend & Backend Technologies</h3>
     <div class="skill-grid">
-        <div class="skill-card"><img src="{% static 'media/python.jpeg' %}"><p>Python</p></div>
-        <div class="skill-card"><img src="{% static 'media/django.png' %}"><p>Django</p></div>
         <div class="skill-card"><img src="{% static 'media/html5.png' %}"><p>HTML</p></div>
         <div class="skill-card"><img src="{% static 'media/css3.png' %}"><p>CSS</p></div>
         <div class="skill-card"><img src="{% static 'media/javascript.png' %}"><p>JavaScript</p></div>
+        <div class="skill-card"><img src="{% static 'media/typescript.png' %}"><p>TypeScript</p></div>
+        <div class="skill-card"><img src="{% static 'media/angular.png' %}"><p>Angular</p></div>
+        <div class="skill-card"><img src="{% static 'media/django.png' %}"><p>Django</p></div>
         <div class="skill-card"><img src="{% static 'media/mysql.jpeg' %}"><p>MySQL</p></div>
     </div>
-
-    <h3 class="skill-title">Data Science & Machine Learning</h3>
-    <div class="skill-grid">
-        <div class="skill-card"><img src="{% static 'media/pandas.png' %}"><p>Pandas</p></div>
-        <div class="skill-card"><img src="{% static 'media/numpy.png' %}"><p>NumPy</p></div>
-        <div class="skill-card"><img src="{% static 'media/scikit.png' %}"><p>Scikit-Learn</p></div>
-        <div class="skill-card"><img src="{% static 'media/matplotlib.png' %}"><p>Matplotlib</p></div>
-        <div class="skill-card"><img src="{% static 'media/excel.png' %}"><p>Excel</p></div>
-    </div>
 </section>
+
 <!-- PROJECTS -->
 <section class="section" id="projects">
     <h2>Projects</h2>
@@ -63,9 +56,9 @@
 
             <h3>ATS Resume System</h3>
             <p>
-                A web-based Applicant Tracking System built using Django to manage
-                candidate resumes, track application status (Shortlisted, On Hold, Rejected),
-                and streamline the recruitment workflow with a clean admin dashboard.
+                A web-based Applicant Tracking System built with Angular (frontend)
+                and Django (backend) to manage candidate resumes, track application
+                status, and streamline recruitment workflows using role-based dashboards.
             </p>
 
             <div class="project-footer">
@@ -82,9 +75,9 @@
 
             <h3>HR Management System</h3>
             <p>
-                A full-stack HR management application that handles employee records,
-                attendance tracking, payroll management, and role-based dashboards
-                with secure authentication using Django and MySQL.
+                A complete HR management application handling employee records,
+                attendance tracking, payroll management, and secure authentication
+                with Angular, Django REST APIs, and MySQL database integration.
             </p>
 
             <div class="project-footer">
@@ -101,9 +94,9 @@
 
             <h3>Weather Forecasting Application</h3>
             <p>
-                A responsive weather forecasting web application developed using
-                HTML, CSS, and JavaScript that fetches real-time weather data using
-                public APIs and displays temperature, humidity, and weather conditions.
+                A responsive weather application developed using HTML, CSS,
+                and JavaScript that integrates public APIs to display real-time
+                weather data including temperature, humidity, and conditions.
             </p>
 
             <div class="project-footer">
@@ -120,9 +113,8 @@
 
             <h3>Netflix Clone</h3>
             <p>
-                A frontend clone of Netflix built using HTML and CSS, focusing on
-                responsive design, layout structuring, and UI consistency to replicate
-                the real-world streaming platform interface.
+                A frontend UI clone built using HTML and CSS, focusing on responsive
+                layouts, structured design components, and real-world interface replication.
             </p>
 
             <div class="project-footer">
@@ -139,9 +131,9 @@
 
             <h3>YouTube Data Warehousing</h3>
             <p>
-                An end-to-end data engineering project that uses the YouTube API to
-                collect channel data, store it in a structured data warehouse,
-                and perform analytical queries for insights and reporting.
+                An end-to-end data engineering project that collects YouTube API data,
+                stores it in a structured MySQL database, and performs analytical queries
+                to generate insights and dashboard reporting.
             </p>
 
             <div class="project-footer">
@@ -158,18 +150,19 @@
 <!-- EDUCATION -->
 <section class="section" id="education">
     <h2>Education</h2>
-
     <div class="edu-grid">
         <div class="edu-card">
-            B.E Mechanical Engineering – 2022
+            <h3>Panimalar Engineering College</h3>
+            <p>B.E – Mechanical Engineering</p>
+            <p>CGPA: 8.17</p>
+            <p>Passed Out: 2022</p>
         </div>
     </div>
 </section>
 
-<!-- INTERNSHIP -->
+<!-- Courses -->
 <section class="section" id="internship">
     <h2>Internship</h2>
-
     <div class="edu-grid">
         <div class="edu-card">
             Data Science Intern – GUVI (IIT-M Incubated)<br>
@@ -177,40 +170,57 @@
         </div>
 
         <div class="edu-card">
-            Python Full Stack Developer Intern – Palle Technologies<br>
+            Full Stack Developer Intern – Palle Technologies<br>
             <small>Duration: 6 Months</small>
         </div>
     </div>
 </section>
 
-
 <!-- CERTIFICATES -->
 <section class="section" id="certificates">
     <h2>Certificates</h2>
-
     <div class="cert-grid">
-        <div class="cert-card">Python Programming</div>
-        <div class="cert-card">Django Development</div>
-        <div class="cert-card">Data Science</div>
-        <div class="cert-card">Machine Learning</div>
-        <div class="cert-card">SQL</div>
+        <div class="cert-card">Full Stack Web Development</div>
+        <div class="cert-card">Angular & TypeScript</div>
+        <div class="cert-card">Django Backend Development</div>
+        <div class="cert-card">SQL & Database Design</div>
+        <div class="cert-card">REST API Development</div>
     </div>
 </section>
 
 <!-- EXPERIENCE -->
 <section class="section" id="experience">
     <h2>Experience</h2>
-
     <div class="edu-grid">
-        <div class="edu-card">Python Full Stack Intern – Palle Technologies</div>
-        <div class="edu-card">Manufacturing Industry – 2022–2024</div>
+
+        <!-- Full Stack Intern -->
+        <div class="edu-card">
+            <h3>Full Stack Developer Intern – Palle Technologies</h3>
+            <p><small>Duration: 6 Months</small></p>
+            <ul>
+                <li>Developed responsive web applications using Angular, TypeScript, and Django.</li>
+                <li>Built and integrated RESTful APIs with secure authentication and database connectivity.</li>
+                <li>Implemented CRUD operations, form validations, and role-based access control.</li>
+            </ul>
+        </div>
+
+        <!-- Manufacturing Experience -->
+        <div class="edu-card">
+            <h3>Stanadyne India Pvt Ltd – Thiruvallur, Tamil Nadu</h3>
+            <p><small>June 2022 – February 2024</small></p>
+            <ul>
+                <li>Worked in manufacturing operations ensuring quality standards and production efficiency.</li>
+                <li>Collaborated with cross-functional teams to reduce process errors and improve workflow.</li>
+                <li>Maintained documentation and supported continuous improvement initiatives.</li>
+            </ul>
+        </div>
+
     </div>
 </section>
 
 <!-- CONTACT -->
 <section class="section contact" id="contact">
     <h2>Contact Me</h2>
-
     <div class="contact-grid">
         <p><i class="fa-solid fa-envelope"></i> yeswanthkumar348@email.com</p>
         <p><i class="fa-brands fa-linkedin"></i> linkedin.com/in/yeswanthkumar16</p>
